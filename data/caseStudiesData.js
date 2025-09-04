@@ -693,8 +693,7 @@ export const caseStudiesData = {
         "Peak Project Management is a specialist project management consultancy providing end to end solutions for councils, developers, and asset owners across the Waikato region of New Zealand.",
       ctaText: "Schedule a Consultation",
       ctaLink: "/schedule-consultation",
-      imageSrc:
-        "/assets/images/website-dev/peak-pm/1.png",
+      imageSrc: "/assets/images/website-dev/peak-pm/1.png",
       imageAlt: "Peak PM Website Preview",
     },
     clientOverview: {
@@ -913,6 +912,342 @@ export const caseStudiesData = {
           title: "Features and Functionality",
           description:
             "The website features a comprehensive portfolio section that serves as a project showcase highlighting successful deliveries and demonstrating expertise, with clear descriptions of project management services tailored to councils, developers, and asset owners from planning to supervision. A user-friendly contact form is integrated with instant email notifications, complemented by an interactive location map with an embedded Google Map on the contact page to help customers easily find Peak Project Management's office and service areas. Additionally, a well-crafted about section reinforces Peak Project Management's brand identity, highlighting their years of experience, core values, team expertise, project approach, and commitment to quality.",
+          icon: "FaCogs",
+        },
+      ],
+    },
+  },
+  "kandy-mechanical": {
+    id: "kandy-mechanical",
+    hero: {
+      subtitle: "Automotive repair and maintenance provider",
+      title: "Total Branding Solution",
+      description:
+        "Kandy Mechanical & Transport, a trusted automotive repair and maintenance provider in Hamilton, New Zealand, sought a comprehensive digital and brand presence to reflect their expertise and reliability.",
+      ctaText: "Schedule a Consultation",
+      ctaLink: "/schedule-consultation",
+      imageSrc: "/assets/images/website-dev/kandy-auto/2.png",
+      imageAlt: "Kandy Auto Website Preview",
+    },
+    clientOverview: {
+      services: [
+        {
+          icon: "FaGasPump", // or "FaTint" or "FaExclamationTriangle"
+          label: "Wrong Fuel Flush",
+        },
+        {
+          icon: "FaCar", // or "FaHandshake" or "FaTag"
+          label: "Vehicle Sale",
+        },
+        {
+          icon: "FaWrench", // or "FaTools" or "FaCogs"
+          label: "General Repairs & Vehicle Servicing",
+        },
+        {
+          icon: "FaTruck", // or "FaPhoneAlt" or "FaExclamationCircle"
+          label: "Emergency Breakdowns & Towing",
+        },
+        {
+          icon: "FaHammer", // or "FaPaintBrush" or "FaSprayCan"
+          label: "Panel Beating & Spray Painting",
+        },
+        {
+          icon: "FaCube", // or "FaBoxes" or "FaShoppingCart"
+          label: "Genuine Parts Supply & Sales",
+        },
+        {
+          icon: "FaCircle", // or "FaRegCircle" or "FaBalanceScale"
+          label: "Tyre Replacement & Wheel Balancing",
+        },
+        {
+          icon: "FaSearch", // or "FaPlug" or "FaMicrochip"
+          label: "Mechanical Diagnostics & Electrical Repair",
+        },
+        {
+          icon: "FaCogs", // or "FaWrench" or "FaTools"
+          label: "Differential & Suspension repair",
+        },
+        {
+          icon: "FaTools", // or "FaWrench" or "FaTools"
+          label: "Part engine repair",
+        },
+      ],
+      companyName: "Kandy Mechanical & Transport",
+      industry: "Automotive repair and maintenance provider",
+      website: "https://kandymechanical.co.nz/",
+      description:
+        "Kandy Mechanical & Transport, a trusted automotive repair and maintenance provider in Hamilton, New Zealand, sought a comprehensive digital and brand presence to reflect their expertise and reliability. Beyond a modern, professional website, the goal was to deliver a complete branding solution that communicates their credibility, engages customers, and strengthens brand recognition across multiple platforms.",
+    },
+    challenges: {
+      introduction: "",
+      items: [
+        {
+          title: "Content Structuring",
+          description:
+            "Presenting detailed service offerings clearly without overwhelming users, ensuring easy navigation and readability",
+        },
+        {
+          title: "Brand Positioning",
+          description:
+            "Translating decades of international and local experience into a concise, customer-friendly narrative that conveys trust and expertise.",
+        },
+        {
+          title: "Online Visibility",
+          description:
+            "Establishing a digital presence for a business that previously had limited online exposure.",
+        },
+        {
+          title: "Consistent Branding Across Platforms",
+          description:
+            "Ensuring that website, social media, and offline marketing materials all reflect a unified brand identity.",
+        },
+        {
+          title: "Technical Optimization",
+          description:
+            "Improving website performance, speed, and SEO to meet modern web standards and enhance user experience.",
+        },
+      ],
+    },
+    approach: {
+      technicalObjectives: [
+        {
+          icon: "FaWordpress", // Keep this - perfect for WordPress
+          title: "WordPress CMS",
+          description:
+            "This industry leading Content Management System (CMS) is employed to develop a flexible, scalable, and SEO optimized website, providing an extensive plugin ecosystem for enhanced functionality.",
+          bgColor: "bg-customYellow",
+        },
+        {
+          icon: "FaServer", // Perfect for hosting services
+          title: "Hostinger",
+          description:
+            "Serving as the hosting provider, Hostinger offers reliable and high-performance hosting services with optimized WordPress infrastructure, ensuring fast loading speeds, 99.9% uptime guarantee, and comprehensive technical support with LiteSpeed web servers and built-in caching.",
+          bgColor: "bg-white",
+        },
+        {
+          icon: "FaLock", // Classic icon for SSL/security
+          title: "SSL Certificate",
+          description:
+            "Integrated free SSL encryption ensures secure data transmission between users and the website, providing enhanced security and improved SEO rankings.",
+          bgColor: "bg-customYellow",
+        },
+        {
+          icon: "FaGlobe", // Perfect for global CDN network
+          title: "Content Delivery Network (CDN)",
+          description:
+            "Leveraging Hostinger's global CDN infrastructure to deliver website content faster to users worldwide, reducing load times and improving user experience.",
+          bgColor: "bg-white",
+        },
+        {
+          icon: "FaPuzzlePiece", // Keep this - good for page builder
+          title: "Elementor Page Builder",
+          description:
+            "Utilized for drag-and-drop visual design, enabling efficient creation of custom layouts without requiring extensive coding knowledge",
+          bgColor: "bg-customYellow",
+        },
+        {
+          icon: "FaWpforms", // Keep this - perfect for WP Forms
+          title: "WP Forms",
+          description: "Implemented for creating user-friendly contact forms",
+          bgColor: "bg-white",
+        },
+        {
+          icon: "FaEnvelope", // Better than FaPaperPlane for email/SMTP
+          title: "WP Mail SMTP",
+          description:
+            "Configured to ensure reliable email delivery from the WordPress site to users and administrators",
+          bgColor: "bg-customYellow",
+        },
+      ],
+      designObjectives: [
+        {
+          icon: "FaAward", // or "FaStar" or "FaCertificate"
+          title: "Professional Brand Image",
+          description:
+            "Establish a cohesive visual identity reflecting Kandy Mechanical's expertise, trustworthiness, and quality service",
+          bgColor: "bg-customYellow",
+        },
+        {
+          icon: "FaListUl", // or "FaClipboardList" or "FaTasks"
+          title: "Service Clarity",
+          description:
+            "Present all automotive repair and maintenance services in a clear and structured manner.",
+          bgColor: "bg-white",
+        },
+        {
+          icon: "FaImages", // or "FaCamera" or "FaEye"
+          title: "Portfolio Presentation",
+          description:
+            "Showcase completed projects and customer work with high quality visuals and detailed descriptions.",
+          bgColor: "bg-customYellow",
+        },
+        {
+          icon: "FaBullseye", // or "FaPhoneAlt" or "FaHandPointUp"
+          title: "Lead Generation",
+          description:
+            "Integrate strong call to action elements to encourage inquiries",
+          bgColor: "bg-white",
+        },
+        {
+          icon: "FaMobile", // or "FaTabletAlt" or "FaDesktop"
+          title: "Mobile Responsiveness",
+          description: "Ensure optimal performance across all devices.",
+          bgColor: "bg-customYellow",
+        },
+        {
+          icon: "FaSearch", // or "FaRocket" or "FaChartLine"
+          title: "Basic SEO Optimization",
+          description:
+            "To make sure the website is visible, user-friendly, and discoverable by both search engines and potential customers",
+          bgColor: "bg-white",
+        },
+        {
+          icon: "FaPalette", // or "FaBrush" or "FaShareAlt"
+          title: "Comprehensive Branding",
+          description:
+            "Extend the brand presence beyond the website through marketing materials and social media integration.",
+          bgColor: "bg-customYellow",
+        },
+      ],
+    },
+    gallery: {
+      images: [
+        {
+          src: "/assets/images/website-dev/kandy-auto/1.png",
+          alt: "Twilson Builders Responsive Design2",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/3.png",
+          alt: "Twilson Builders Responsive Design3",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/4.png",
+          alt: "Twilson Builders Responsive Design4",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/5.png",
+          alt: "Twilson Builders Responsive Design5",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/6.png",
+          alt: "Twilson Builders Responsive Design6",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/7.png",
+          alt: "Twilson Builders Responsive Design7",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/8.png",
+          alt: "Twilson Builders Responsive Design8",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/9.png",
+          alt: "Twilson Builders Responsive Design9",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/10.png",
+          alt: "Twilson Builders Responsive Design10",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/11.png",
+          alt: "Twilson Builders Responsive Design11",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/12.png",
+          alt: "Twilson Builders Responsive Design6",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/13.png",
+          alt: "Twilson Builders Responsive Design7",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/14.png",
+          alt: "Twilson Builders Responsive Design8",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/15.png",
+          alt: "Twilson Builders Responsive Design9",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/16.png",
+          alt: "Twilson Builders Responsive Design10",
+        },
+        {
+          src: "/assets/images/website-dev/kandy-auto/17.png",
+          alt: "Twilson Builders Responsive Design11",
+        },
+      ],
+    },
+    achievements: {
+      introduction:
+        "The website design for Kandy Mechanical & Transport successfully achieved all the initial objectives, delivering a professional online presence that effectively showcases their security services and expertise.",
+      items: [
+        {
+          title: "Enhanced Online Presence",
+          description:
+            "A professional website that builds trust and credibility",
+        },
+        {
+          title: "Improved User Experience",
+          description:
+            "Easy navigation for users to find services, book repairs, or request transport solutions.",
+        },
+        {
+          title: "Higher Engagement",
+          description:
+            "Increased inquiries through call-to-action elements and contact forms.",
+        },
+        {
+          title: "Brand Strengthening",
+          description:
+            "Reinforces Kandy Mechanical’s reputation as a trusted name in Hamilton’s automotive industry",
+        },
+      ],
+    },
+    designProcess: {
+      introduction:
+        "Our design process for Kandy Mechanical & Transport followed a structured approach that focused on their specific needs as a security services company. We aimed to create a website that would effectively showcase their security solutions while providing an intuitive user experience for homeowners, small businesses, and commercial clients.",
+      steps: [
+        {
+          number: "01",
+          title: "Custom Logo Design",
+          description:
+            "Developed multiple logo concepts with iterative revisions based on client feedback. The final logo was delivered in high resolution formats suitable for print and digital use, including JPEG, PNG, and SVG files.",
+          icon: "FaSearch",
+        },
+        {
+          number: "02",
+          title: "Research and Discovery",
+          description:
+            "For the research and discovery phase, We identified the target audience as vehicle owners, fleet operators, and businesses seeking reliable mechanical and transport services. The brand identity was developed to ensure the website design aligns with Kandy Mechanical's core values of reliability, experience, and technical expertise, all backed by over 30 years in the industry.",
+          icon: "FaPalette",
+        },
+        {
+          number: "03",
+          title: "Design Features",
+          description:
+            "The design features focused on visual aesthetics with a clean and professional design reflecting the automotive industry, incorporating mechanical imagery, vehicles, and workshop visuals to reinforce brand identity. The responsive design was optimized across desktops, tablets, and smartphones to ensure accessibility for all customers.",
+          icon: "FaMobile",
+        },
+        {
+          number: "04",
+          title: "Navigation Structure",
+          description:
+            "Simple, structured menus for Services, About, Contact, and Booking options.",
+          icon: "FaCompass",
+        },
+        {
+          number: "05",
+          title: "Interactive Elements",
+          description:
+            '"Book an Appointment" and "Call Now" CTAs placed prominently.',
+          icon: "FaMousePointer",
+        },
+        {
+          number: "06",
+          title: "Features and Functionality",
+          description:
+            "The features and functionality section includes several key components that enhance user experience and business operations. The About Section highlights Kandy Mechanical's history, international experience across Sri Lanka, Qatar, and Kuwait, and 8 years serving Hamilton, NZ, reinforcing their credibility and industry expertise. The Services Page provides a clear breakdown of diagnostics, engine repairs, fleet servicing, and transport solutions. The Vehicle Sale Section offers a dedicated page showcasing available vehicles for sale, complete with specifications, pricing, and images, helping potential customers browse inventory directly while also acting as a powerful lead generator for sales inquiries. The Spare Parts Sale Section features an extensive product range with a diverse inventory of spare parts, including engine components, suspension systems, electrical parts, and more, ensuring customers can find the exact parts they need for various vehicle repairs and upgrades, with user-friendly navigation that organizes products into clearly labeled categories and allows users to quickly locate specific components based on their vehicle's requirements or the type of repair needed, plus local expertise as a New Zealand-based business offering local knowledge and support to ensure customers receive parts suitable for local vehicles and driving conditions. Additional features include a Contact Form with an easy-to-use inquiry form with integrated email notifications, Testimonials that showcase positive feedback from customers to reinforce their reputation, and an Interactive Location Map with an embedded Google Map to help clients easily locate the Hamilton workshop.",
           icon: "FaCogs",
         },
       ],

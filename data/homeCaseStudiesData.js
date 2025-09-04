@@ -53,6 +53,17 @@ const homeCaseStudiesData = [
       "/assets/images/website-dev/peak-pm/1.png",
     caseStudyPath: "/case-studies/web-development/peak-project-management",
   },
+  {
+    id: 6,
+    heading: "Kandy Mechanical & Transport",
+    statistic: "Increase in Engagement",
+    description:
+        "Kandy Mechanical & Transport, a trusted automotive repair and maintenance provider in Hamilton, New Zealand, sought a comprehensive digital and brand presence to reflect their expertise and reliability.",
+    buttonLabel: "View Success Story",
+    imagePath:
+      "/assets/images/website-dev/kandy-auto/2.png",
+    caseStudyPath: "/case-studies/web-development/kandy-mechanical",
+  },
 ];
 
 export default homeCaseStudiesData;

@@ -20,6 +20,11 @@ import {
   FaShieldAlt,
   FaUserCheck,
   FaLock,
+  FaAward,
+  FaListUl,
+  FaImages,
+  FaBullseye,
+  FaSearch,
 } from "react-icons/fa";
 import { SiNextdotjs, SiHubspot, SiGithub, SiNetlify } from "react-icons/si";
 
@@ -47,7 +52,12 @@ const iconMap = {
   FaBuilding: FaBuilding,
   FaShieldAlt: FaShieldAlt,
   FaUserCheck: FaUserCheck,
-  FaLock: FaLock
+  FaLock: FaLock,
+  FaAward:FaAward,
+  FaListUl:FaListUl,
+  FaImages:FaImages,
+  FaBullseye:FaBullseye,
+  FaSearch:FaSearch,
 };
 
 const OurApproachSection = ({ data }) => {
