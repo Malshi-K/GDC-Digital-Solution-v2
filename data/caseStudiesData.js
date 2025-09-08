@@ -1246,12 +1246,94 @@ export const caseStudiesData = {
         {
           number: "06",
           title: "Features and Functionality",
-          description:
-            "The features and functionality section includes several key components that enhance user experience and business operations. The About Section highlights Kandy Mechanical's history, international experience across Sri Lanka, Qatar, and Kuwait, and 8 years serving Hamilton, NZ, reinforcing their credibility and industry expertise. The Services Page provides a clear breakdown of diagnostics, engine repairs, fleet servicing, and transport solutions. The Vehicle Sale Section offers a dedicated page showcasing available vehicles for sale, complete with specifications, pricing, and images, helping potential customers browse inventory directly while also acting as a powerful lead generator for sales inquiries. The Spare Parts Sale Section features an extensive product range with a diverse inventory of spare parts, including engine components, suspension systems, electrical parts, and more, ensuring customers can find the exact parts they need for various vehicle repairs and upgrades, with user-friendly navigation that organizes products into clearly labeled categories and allows users to quickly locate specific components based on their vehicle's requirements or the type of repair needed, plus local expertise as a New Zealand-based business offering local knowledge and support to ensure customers receive parts suitable for local vehicles and driving conditions. Additional features include a Contact Form with an easy-to-use inquiry form with integrated email notifications, Testimonials that showcase positive feedback from customers to reinforce their reputation, and an Interactive Location Map with an embedded Google Map to help clients easily locate the Hamilton workshop.",
+          description: "",
           icon: "FaCogs",
         },
       ],
     },
+    additionalServices: {
+      title: "Additional Services & Solutions",
+      introduction: "Beyond website development, we provided comprehensive digital marketing and branding solutions to establish Kandy Mechanical's complete online presence.",
+      sections: [
+        {
+          id: "seo-optimization",
+          title: "Basic SEO Optimization",
+          icon: "FaSearch",
+          description: "Comprehensive SEO implementation to improve search visibility and organic traffic.",
+          items: [
+            {
+              title: "Keyword Research",
+              description: "Conducted keyword research for all website pages to target relevant search terms."
+            },
+            {
+              title: "Content Optimization",
+              description: "Optimized descriptive text and content with targeted keywords for better search visibility."
+            },
+            {
+              title: "Technical SEO",
+              description: "Fixed technical issues highlighted by Google Lighthouse and PageSpeed Insights to improve performance and user experience."
+            },
+            {
+              title: "Analytics Setup",
+              description: "Created and linked Google Analytics to track website traffic and user behavior."
+            },
+            {
+              title: "Search Engine Indexing",
+              description: "Developed sitemap and robots.txt files for proper indexing by search engines."
+            },
+            {
+              title: "Local SEO",
+              description: "Created and optimized Google My Business page to enhance local search presence."
+            }
+          ]
+        },
+        {
+          id: "facebook-setup",
+          title: "Facebook Page Setup",
+          icon: "FaFacebook",
+          description: "Complete Facebook business page creation and optimization for social media presence.",
+          items: [
+            {
+              title: "Business Page Creation",
+              description: "Created an official business page for Kandy Mechanical."
+            },
+            {
+              title: "Profile Optimization",
+              description: "Uploaded logo, cover image, and initial business information."
+            },
+            {
+              title: "Integration",
+              description: "Configured contact options and integrated the page with the website."
+            }
+          ]
+        },
+        {
+          id: "branding-materials",
+          title: "Marketing & Branding Material Design, Printing & Handover",
+          icon: "FaPrint",
+          description: "Professionally designed materials to create a consistent brand identity across all touchpoints.",
+          subtitle: "Professionally designed materials to create a consistent brand identity:",
+          items: [
+            {
+              title: "Business Stationery",
+              description: "Letterhead and business/visiting cards"
+            },
+            {
+              title: "Marketing Collateral",
+              description: "Flyers and shop signboards"
+            },
+            {
+              title: "Vehicle Branding",
+              description: "Outdoor banners and vehicle branding graphics"
+            },
+            {
+              title: "Service Materials",
+              description: "Service tags and stickers"
+            }
+          ]
+        }
+      ]
+    }
   },
 };
 

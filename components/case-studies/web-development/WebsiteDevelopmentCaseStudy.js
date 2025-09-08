@@ -8,6 +8,7 @@ import KeyAchievements from './KeyAchievements';
 import GallerySection from './GallerySection';
 import { getCaseStudyById } from "@/data/caseStudiesData";
 import DesignProcessSection from "./DesignProcessSection";
+import AdditionalServicesSection from "./AdditionalServicesSection";
 
 const WebsiteDevelopmentCaseStudy = ({ caseStudyId }) => {
   // Get the case study data based on the ID
@@ -29,9 +30,8 @@ const WebsiteDevelopmentCaseStudy = ({ caseStudyId }) => {
       <ClientOverview data={caseStudyData.clientOverview} />
       <ChallengesSection data={caseStudyData.challenges} />
       <OurApproachSection data={caseStudyData.approach} />
-      {/* Only render the Design Process section if data exists */}
-      {hasDesignProcess && <DesignProcessSection data={caseStudyData.designProcess} />}
-      
+      {hasDesignProcess && <DesignProcessSection data={caseStudyData.designProcess} />}      
+      <AdditionalServicesSection data={caseStudyData.additionalServices} />      
       <GallerySection data={caseStudyData.gallery} />
       <KeyAchievements data={caseStudyData.achievements} />
     </section>
