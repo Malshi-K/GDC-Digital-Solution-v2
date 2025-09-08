@@ -31,13 +31,22 @@ const DesignProcessSection = ({ data }) => {
   // Always declare hooks at the top level, before any conditional logic
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [isContentVisible, setIsContentVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const headerRef = useRef(null);
   const contentRef = useRef(null);
 
   useEffect(() => {
+    // Check if screen is mobile size
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
     // Only run the observer logic if we have data to display
     if (!data || !data.steps || data.steps.length === 0) {
-      return;
+      return () => window.removeEventListener('resize', checkMobile);
     }
 
     const headerObserver = new IntersectionObserver(
@@ -67,6 +76,7 @@ const DesignProcessSection = ({ data }) => {
     }
 
     return () => {
+      window.removeEventListener('resize', checkMobile);
       if (headerRef.current) {
         headerObserver.unobserve(headerRef.current);
       }
@@ -86,10 +96,14 @@ const DesignProcessSection = ({ data }) => {
       <div className="container mx-auto">
         <div
           ref={headerRef}
-          className={`text-center mb-16 transform transition-all duration-500 ${
-            isHeaderVisible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-5"
+          className={`text-center mb-16 ${
+            isMobile
+              ? ''
+              : `transform transition-all duration-500 ${
+                  isHeaderVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"
+                }`
           }`}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-customYellow mb-6">
@@ -113,12 +127,16 @@ const DesignProcessSection = ({ data }) => {
             return (
               <div
                 key={index}
-                className={`bg-white rounded-lg shadow-md p-8 flex flex-col items-start hover:shadow-lg transition-all duration-500 transform ${
-                  isContentVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8"
+                className={`bg-white rounded-lg shadow-md p-8 flex flex-col items-start hover:shadow-lg ${
+                  isMobile
+                    ? ''
+                    : `transition-all duration-500 transform ${
+                        isContentVisible
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 translate-y-8"
+                      }`
                 }`}
-                style={{ transitionDelay: `${index * 200}ms` }}
+                style={isMobile ? {} : { transitionDelay: `${index * 200}ms` }}
               >
                 <div className="flex items-center justify-between w-full mb-4">
                   <span className="text-4xl font-bold text-customYellow opacity-30">

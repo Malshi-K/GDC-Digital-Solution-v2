@@ -62,12 +62,21 @@ const iconMap = {
 
 const OurApproachSection = ({ data }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef(null);
 
   // Check if design objectives exist and have data
   const hasDesignObjectives = data.designObjectives && data.designObjectives.length > 0;
 
   useEffect(() => {
+    // Check if screen is mobile size
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -82,6 +91,7 @@ const OurApproachSection = ({ data }) => {
     }
 
     return () => {
+      window.removeEventListener('resize', checkMobile);
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
@@ -93,8 +103,10 @@ const OurApproachSection = ({ data }) => {
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-customYellow text-3xl md:text-4xl font-bold text-center mb-10 flex flex-wrap justify-center">
           <span
-            className={`ml-2 text-customGray transition-opacity duration-500 ${
-              isVisible ? "opacity-100" : "opacity-0"
+            className={`ml-2 text-customGray ${
+              isMobile 
+                ? '' 
+                : `transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`
             }`}
           >
             OUR&nbsp;
@@ -102,21 +114,27 @@ const OurApproachSection = ({ data }) => {
           {"APPROACH".split("").map((letter, index) => (
             <span
               key={`approach-${index}`}
-              className={`transform transition-all duration-300 ${
-                isVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-5"
+              className={`${
+                isMobile
+                  ? ''
+                  : `transform transition-all duration-300 ${
+                      isVisible
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-5"
+                    }`
               }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              style={isMobile ? {} : { transitionDelay: `${index * 100}ms` }}
             >
               {letter}
             </span>
           ))}
           <span
-            className={`mx-1 transition-opacity duration-300 ${
-              isVisible ? "opacity-100" : "opacity-0"
+            className={`mx-1 ${
+              isMobile
+                ? ''
+                : `transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"}`
             }`}
-            style={{ transitionDelay: `${8 * 100}ms` }}
+            style={isMobile ? {} : { transitionDelay: `${8 * 100}ms` }}
           >
             &nbsp;
           </span>
@@ -124,20 +142,24 @@ const OurApproachSection = ({ data }) => {
 
         {/* Introduction Paragraph */}
         <p
-          className={`text-gray-700 mb-10 leading-relaxed max-w-4xl mx-auto transition-all duration-500 ${
-            isVisible ? "opacity-100" : "opacity-0"
+          className={`text-gray-700 mb-10 leading-relaxed max-w-4xl mx-auto ${
+            isMobile
+              ? ''
+              : `transition-all duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`
           }`}
-          style={{ transitionDelay: "200ms" }}
+          style={isMobile ? {} : { transitionDelay: "200ms" }}
         >
           {data.introduction}
         </p>
 
         {/* Technical Overview Grid */}
         <h2
-          className={`text-3xl font-bold text-customGray mb-6 transition-all duration-500 ${
-            isVisible ? "opacity-100" : "opacity-0"
+          className={`text-3xl font-bold text-customGray mb-6 ${
+            isMobile
+              ? ''
+              : `transition-all duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`
           }`}
-          style={{ transitionDelay: "300ms" }}
+          style={isMobile ? {} : { transitionDelay: "300ms" }}
         >
           Technical Overview
         </h2>
@@ -147,14 +169,18 @@ const OurApproachSection = ({ data }) => {
             return (
               <div
                 key={index}
-                className={`flex flex-col items-center p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 transform ${
+                className={`flex flex-col items-center p-6 rounded-lg shadow-lg hover:shadow-xl ${
                   objective.bgColor
                 } ${
-                  isVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-12"
+                  isMobile
+                    ? ''
+                    : `transition-all duration-500 transform ${
+                        isVisible
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 translate-y-12"
+                      }`
                 }`}
-                style={{ transitionDelay: `${400 + index * 200}ms` }}
+                style={isMobile ? {} : { transitionDelay: `${400 + index * 200}ms` }}
               >
                 <div className="bg-white p-4 rounded-full mb-4">
                   {IconComponent && (
@@ -195,14 +221,20 @@ const OurApproachSection = ({ data }) => {
         {hasDesignObjectives && (
           <>
             <h2
-              className={`text-3xl font-bold text-customGray mb-6 transition-all duration-500 ${
-                isVisible ? "opacity-100" : "opacity-0"
+              className={`text-3xl font-bold text-customGray mb-6 ${
+                isMobile
+                  ? ''
+                  : `transition-all duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`
               }`}
-              style={{
-                transitionDelay: `${
-                  400 + data.technicalObjectives.length * 200 + 100
-                }ms`,
-              }}
+              style={
+                isMobile
+                  ? {}
+                  : {
+                      transitionDelay: `${
+                        400 + data.technicalObjectives.length * 200 + 100
+                      }ms`,
+                    }
+              }
             >
               Design Overview
             </h2>
@@ -212,21 +244,29 @@ const OurApproachSection = ({ data }) => {
                 return (
                   <div
                     key={index}
-                    className={`flex flex-col items-center p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 transform ${
+                    className={`flex flex-col items-center p-6 rounded-lg shadow-lg hover:shadow-xl ${
                       keyObj.bgColor
                     } ${
-                      isVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-12"
+                      isMobile
+                        ? ''
+                        : `transition-all duration-500 transform ${
+                            isVisible
+                              ? "opacity-100 translate-y-0"
+                              : "opacity-0 translate-y-12"
+                          }`
                     }`}
-                    style={{
-                      transitionDelay: `${
-                        400 +
-                        data.technicalObjectives.length * 200 +
-                        200 +
-                        index * 200
-                      }ms`,
-                    }}
+                    style={
+                      isMobile
+                        ? {}
+                        : {
+                            transitionDelay: `${
+                              400 +
+                              data.technicalObjectives.length * 200 +
+                              200 +
+                              index * 200
+                            }ms`,
+                          }
+                    }
                   >
                     <div className="bg-white p-4 rounded-full mb-4">
                       {IconComponent && (

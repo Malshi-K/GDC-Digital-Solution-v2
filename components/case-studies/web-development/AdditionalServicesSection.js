@@ -18,11 +18,20 @@ const iconComponents = {
 const AdditionalServicesSection = ({ data }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [expandedSections, setExpandedSections] = useState({});
+  const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    // Check if screen is mobile size
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
     if (!data || !data.sections || data.sections.length === 0) {
-      return;
+      return () => window.removeEventListener('resize', checkMobile);
     }
 
     const observer = new IntersectionObserver(
@@ -39,6 +48,7 @@ const AdditionalServicesSection = ({ data }) => {
     }
 
     return () => {
+      window.removeEventListener('resize', checkMobile);
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
@@ -62,8 +72,12 @@ const AdditionalServicesSection = ({ data }) => {
       <div className="container mx-auto">
         <div 
           ref={sectionRef}
-          className={`transform transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`${
+            isMobile
+              ? ''
+              : `transform transition-all duration-700 ${
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`
           }`}
         >
           {/* Header */}
@@ -87,12 +101,16 @@ const AdditionalServicesSection = ({ data }) => {
               return (
                 <div
                   key={service.id}
-                  className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 transform ${
-                    isVisible 
-                      ? "opacity-100 translate-y-0" 
-                      : "opacity-0 translate-y-8"
-                  } overflow-hidden`}
-                  style={{ transitionDelay: `${index * 200}ms` }}
+                  className={`bg-white rounded-xl shadow-lg hover:shadow-xl overflow-hidden ${
+                    isMobile
+                      ? ''
+                      : `transition-all duration-500 transform ${
+                          isVisible 
+                            ? "opacity-100 translate-y-0" 
+                            : "opacity-0 translate-y-8"
+                        }`
+                  }`}
+                  style={isMobile ? {} : { transitionDelay: `${index * 200}ms` }}
                 >
                   {/* Card Header */}
                   <div className="p-6 border-b border-gray-100">
