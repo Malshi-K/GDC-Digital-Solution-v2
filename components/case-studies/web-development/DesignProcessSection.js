@@ -152,7 +152,7 @@ const DesignProcessSection = ({ data }) => {
                               About Section
                             </span>
                             <span className="ml-1">
-                              – Highlights Kandy Mechanical's history,
+                              – Highlights Kandy Mechanical&apos;s history,
                               international experience across Sri Lanka, Qatar,
                               and Kuwait, and 8 years serving Hamilton, NZ.
                               Reinforces their credibility and industry
@@ -222,7 +222,7 @@ const DesignProcessSection = ({ data }) => {
                                 <span className="ml-1">
                                   Products are organized into clearly labeled
                                   categories, allowing users to quickly locate
-                                  specific parts based on their vehicle's
+                                  specific parts based on their vehicle&apos;s
                                   requirements or the type of repair needed.
                                 </span>
                               </div>
