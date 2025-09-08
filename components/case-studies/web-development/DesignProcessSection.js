@@ -130,7 +130,7 @@ const DesignProcessSection = ({ data }) => {
                   {step.title}
                 </h3>
                 <div className="text-gray-600 text-sm">
-                  {step.number === "06" && step.title === "Features and Functionality" ? (
+                  {step.number === "06" && step.title === "Features and Functionality" && (!step.description || step.description.trim() === "") ? (
                     <div>
                       <p className="mb-4 font-medium">
                         The features and functionality section includes several key components that enhance user experience and business operations.
@@ -138,7 +138,7 @@ const DesignProcessSection = ({ data }) => {
                       
                       <div className="space-y-3">
                         <div className="flex items-start">
-                          <span className="text-customYellow mr-3 text-lg">❖</span>
+                          <span className="text-customYellow mr-3 mt-1 text-lg">❖</span>
                           <div>
                             <span className="font-semibold text-gray-800">About Section</span>
                             <span className="ml-1">– Highlights Kandy Mechanical's history, international experience across Sri Lanka, Qatar, and Kuwait, and 8 years serving Hamilton, NZ. Reinforces their credibility and industry expertise.</span>
@@ -146,7 +146,7 @@ const DesignProcessSection = ({ data }) => {
                         </div>
 
                         <div className="flex items-start">
-                          <span className="text-customYellow mr-3 text-lg">❖</span>
+                          <span className="text-customYellow mr-3 mt-1 text-lg">❖</span>
                           <div>
                             <span className="font-semibold text-gray-800">Services Page</span>
                             <span className="ml-1">– Clear breakdown of diagnostics, engine repairs, fleet servicing and transport solutions.</span>
@@ -154,7 +154,7 @@ const DesignProcessSection = ({ data }) => {
                         </div>
 
                         <div className="flex items-start">
-                          <span className="text-customYellow mr-3 text-lg">❖</span>
+                          <span className="text-customYellow mr-3 mt-1 text-lg">❖</span>
                           <div>
                             <span className="font-semibold text-gray-800">Vehicle Sale Section</span>
                             <span className="ml-1">– Dedicated page showcasing available vehicles for sale, complete with specifications, pricing, and images. Helps potential customers browse inventory directly on-site and acts as a powerful lead generator for sales inquiries.</span>
@@ -162,7 +162,7 @@ const DesignProcessSection = ({ data }) => {
                         </div>
 
                         <div className="flex items-start">
-                          <span className="text-customYellow mr-3 text-lg">❖</span>
+                          <span className="text-customYellow mr-3 mt-1 text-lg">❖</span>
                           <div>
                             <span className="font-semibold text-gray-800">Spare Parts Sale Section</span>
                             <div className="ml-1 mt-2 space-y-2">
@@ -183,7 +183,7 @@ const DesignProcessSection = ({ data }) => {
                         </div>
 
                         <div className="flex items-start">
-                          <span className="text-customYellow mr-3 text-lg">❖</span>
+                          <span className="text-customYellow mr-3 mt-1 text-lg">❖</span>
                           <div>
                             <span className="font-semibold text-gray-800">Contact Form</span>
                             <span className="ml-1">– Easy-to-use inquiry form with integrated email notifications.</span>
@@ -191,7 +191,7 @@ const DesignProcessSection = ({ data }) => {
                         </div>
 
                         <div className="flex items-start">
-                          <span className="text-customYellow mr-3 text-lg">❖</span>
+                          <span className="text-customYellow mr-3 mt-1 text-lg">❖</span>
                           <div>
                             <span className="font-semibold text-gray-800">Testimonials</span>
                             <span className="ml-1">– The website showcases positive feedback from customers to reinforce their reputation.</span>
@@ -199,7 +199,7 @@ const DesignProcessSection = ({ data }) => {
                         </div>
 
                         <div className="flex items-start">
-                          <span className="text-customYellow mr-3 text-lg">❖</span>
+                          <span className="text-customYellow mr-3 mt-1 text-lg">❖</span>
                           <div>
                             <span className="font-semibold text-gray-800">Interactive Location Map</span>
                             <span className="ml-1">– Embedded Google Map to help clients easily locate the Hamilton workshop.</span>
