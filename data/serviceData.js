@@ -95,7 +95,7 @@ export const serviceSEOData = {
       "Get professional web development services with GDC Digital Solutions. We build responsive, SEO-friendly websites tailored to boost your business growth online.",
     keywords:
       "web development services, custom websites, responsive design, website development NZ, professional web developers, business websites, SEO-friendly development",
-    canonical: "https://gdcdigital.net/services/development",
+    canonical: "https://gdcdigital.co.nz/services/development",
   },
   "google-ads": {
     title:
@@ -104,7 +104,7 @@ export const serviceSEOData = {
       "Boost your business with GDC Digital Solutions' expert Google Ads services. Drive traffic, generate leads, and increase ROI with targeted campaigns in New Zealand.",
     keywords:
       "Google Ads management, PPC advertising, paid search marketing, Google Ads agency NZ, ROI optimisation, lead generation, targeted advertising",
-    canonical: "https://gdcdigital.net/services/google-ads",
+    canonical: "https://gdcdigital.co.nz/services/google-ads",
   },
   seo: {
     title: "SEO Services New Zealand | Boost Website Traffic & Rankings",
@@ -112,7 +112,7 @@ export const serviceSEOData = {
       "Boost your website's ranking with GDC Digital Solutions. We offer expert SEO services, including keyword optimisation, on-page SEO, and link building for higher traffic.",
     keywords:
       "SEO services NZ, search engine optimisation, keyword optimisation, link building, on-page SEO, website rankings, organic traffic",
-    canonical: "https://gdcdigital.net/services/seo",
+    canonical: "https://gdcdigital.co.nz/services/seo",
   },
   "nfc-cards": {
     title: "NFC Business Cards New Zealand | Smart Contactless Card Solutions",
@@ -120,6 +120,6 @@ export const serviceSEOData = {
       "Get smart with NFC Cards from GDC Digital Solutions. Simplify contactless sharing of information, boost networking, and enhance your brand visibility effortlessly.",
     keywords:
       "NFC business cards, contactless cards, digital business cards, smart cards NZ, contactless sharing, networking solutions, brand visibility",
-    canonical: "https://gdcdigital.net/services/nfc-cards",
+    canonical: "https://gdcdigital.co.nz/services/nfc-cards",
   },
 };

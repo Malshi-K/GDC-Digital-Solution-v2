@@ -10,7 +10,7 @@ export const generateMetadata = async () => {
       title: 'Schedule a Consultation | GDC Digital Solutions',
       description: 'Book your free digital marketing consultation with our experts.',
       type: 'website',
-      url: 'https://gdcdigital.net/schedule-consultation',
+      url: 'https://gdcdigital.co.nz/schedule-consultation',
       siteName: 'GDC Digital Solutions',
       locale: 'en_NZ',
     },
@@ -26,7 +26,7 @@ export const generateMetadata = async () => {
       },
     },
     alternates: {
-      canonical: 'https://gdcdigital.net/schedule-consultation',
+      canonical: 'https://gdcdigital.co.nz/schedule-consultation',
     },
   };
 };

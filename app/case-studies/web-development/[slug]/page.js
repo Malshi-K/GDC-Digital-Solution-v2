@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
     };
   }
   
-  const siteUrl = 'https://gdcdigital.net';
+  const siteUrl = 'https://gdcdigital.co.nz';
   const pageUrl = `${siteUrl}/case-studies/web-development/${slug}`;
   const imageUrl = caseStudy.hero.imageSrc || `${siteUrl}/assets/images/web-development-case-study.jpg`;
   const title = `${caseStudy.hero.title} | GDC Digital Solutions`;

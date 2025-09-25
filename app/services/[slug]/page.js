@@ -145,12 +145,12 @@ export default function ServicePage({ params, isServicesOpen, isAboutOpen }) {
     provider: {
       "@type": "Organisation",
       name: "GDC Digital Solutions",
-      url: "https://gdcdigital.net",
+      url: "https://gdcdigital.co.nz",
     },
     description: seoData.description,
     areaServed: "New Zealand",
     serviceType: service.heading,
-    image: `https://gdcdigital.net${service.image}`,
+    image: `https://gdcdigital.co.nz${service.image}`,
     offers: {
       "@type": "Offer",
       areaServed: "New Zealand",
@@ -178,7 +178,7 @@ export default function ServicePage({ params, isServicesOpen, isAboutOpen }) {
         <meta property="og:url" content={seoData.canonical} />
         <meta
           property="og:image"
-          content={`https://gdcdigital.net${service.image}`}
+          content={`https://gdcdigital.co.nz${service.image}`}
         />
 
         {/* Twitter Card tags */}
@@ -187,7 +187,7 @@ export default function ServicePage({ params, isServicesOpen, isAboutOpen }) {
         <meta name="twitter:description" content={seoData.description} />
         <meta
           name="twitter:image"
-          content={`https://gdcdigital.net${service.image}`}
+          content={`https://gdcdigital.co.nz${service.image}`}
         />
 
         <link rel="canonical" href={seoData.canonical} />

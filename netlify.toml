@@ -1,18 +1,18 @@
 [[redirects]]
-  from = "http://gdcdigital.net/*"
-  to = "https://gdcdigital.net/:splat"
+  from = "http://gdcdigital.co.nz/*"
+  to = "https://gdcdigital.co.nz/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://www.gdcdigital.net/*"
-  to = "https://gdcdigital.net/:splat"
+  from = "http://www.gdcdigital.co.nz/*"
+  to = "https://gdcdigital.co.nz/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://www.gdcdigital.net/*"
-  to = "https://gdcdigital.net/:splat"
+  from = "https://www.gdcdigital.co.nz/*"
+  to = "https://gdcdigital.co.nz/:splat"
   status = 301
   force = true
 

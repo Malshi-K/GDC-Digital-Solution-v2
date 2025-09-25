@@ -7,7 +7,7 @@ import ContactPageTracking from "@/components/home/ContactPageTracking";
 
 // Metadata Generation
 export async function generateMetadata() {
-  const siteUrl = "https://gdcdigital.net";
+  const siteUrl = "https://gdcdigital.co.nz";
   const pageUrl = `${siteUrl}/contact-us`;
   const imageUrl = `${siteUrl}/assets/images/contact-page.jpg`;
   const title = "Contact GDC Digital Solutions - Digital Marketing Experts";

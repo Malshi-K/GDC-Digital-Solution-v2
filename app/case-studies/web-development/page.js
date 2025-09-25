@@ -17,7 +17,7 @@ export const metadata = {
     title: "Web Development Case Studies | GDC Digital Solutions",
     description:
       "Explore our web development case studies at GDC Digital Solutions. See how our custom websites boost traffic, improve user experience, and drive business growth.",
-    url: "https://gdcdigital.net/case-studies/web-development",
+    url: "https://gdcdigital.co.nz/case-studies/web-development",
     siteName: "GDC Digital Solutions",
     type: "website",
   },

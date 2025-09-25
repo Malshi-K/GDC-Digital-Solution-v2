@@ -15,10 +15,10 @@ export const generateMetadata = async () => {
       title: "Google Ads Case Studies | Proven Campaign Success by GDC Digital Solutions",
       description: "Explore GDC Digital Solutions' Google Ads case studies. See how we drive ROI, boost visibility, and deliver targeted campaigns for businesses in New Zealand.",
       type: "article",
-      url: "https://gdcdigital.net/case-studies/google-ads",
+      url: "https://gdcdigital.co.nz/case-studies/google-ads",
       images: [
         {
-          url: "https://gdcdigital.net/assets/images/google-ads-case-study.jpg",
+          url: "https://gdcdigital.co.nz/assets/images/google-ads-case-study.jpg",
           width: 1200,
           height: 630,
           alt: "Google Ads Case Study",
@@ -31,12 +31,12 @@ export const generateMetadata = async () => {
       card: "summary_large_image",
       title: "Google Ads Case Studies | Proven Campaign Success by GDC Digital Solutions",
       description: "Explore GDC Digital Solutions' Google Ads case studies. See how we drive ROI, boost visibility, and deliver targeted campaigns for businesses in New Zealand.",
-      images: ["https://gdcdigital.net/assets/images/google-ads-case-study.jpg"],
+      images: ["https://gdcdigital.co.nz/assets/images/google-ads-case-study.jpg"],
     },
     
     // Canonical URL
     alternates: {
-      canonical: "https://gdcdigital.net/case-studies/google-ads",
+      canonical: "https://gdcdigital.co.nz/case-studies/google-ads",
     },
   };
 
@@ -48,18 +48,18 @@ export const generateMetadata = async () => {
     "publisher": {
       "@type": "Organisation",
       "name": "GDC Digital Solutions",
-      "url": "https://gdcdigital.net"
+      "url": "https://gdcdigital.co.nz"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://gdcdigital.net/case-studies/google-ads"
+      "@id": "https://gdcdigital.co.nz/case-studies/google-ads"
     },
     "description": "Explore GDC Digital Solutions' Google Ads case studies. See how we drive ROI, boost visibility, and deliver targeted campaigns for businesses in New Zealand.",
     "author": {
       "@type": "Organisation",
       "name": "GDC Digital Solutions"
     },
-    "image": "https://gdcdigital.net/assets/images/google-ads-case-study.jpg",
+    "image": "https://gdcdigital.co.nz/assets/images/google-ads-case-study.jpg",
     "datePublished": "2024-01-01", // Update with actual publication date
     "dateModified": "2024-04-21", // Update with actual modification date
     "articleSection": "Case Studies",

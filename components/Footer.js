@@ -101,7 +101,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             <div className="flex items-center justify-center w-1/2 sm:w-1/3 md:w-auto mb-4 sm:mb-0">
               <a
-                href="https://www.gdcdigital.net/"
+                href="https://www.gdcdigital.co.nz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-80"
