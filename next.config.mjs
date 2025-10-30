@@ -7,7 +7,7 @@ const nextConfig = {
         headers: [
           {
             key: "X-Frame-Options",
-            value: "DENY",
+            value: "SAMEORIGIN", // Allow HubSpot chat widget iframe
           },
           {
             key: "X-Content-Type-Options",
@@ -16,11 +16,6 @@ const nextConfig = {
           {
             key: "Referrer-Policy",
             value: "strict-origin-when-cross-origin",
-          },
-          {
-            key: "Permissions-Policy",
-            value:
-              "camera=(), microphone=(), geolocation=(), interest-cohort=()",
           },
         ],
       },
