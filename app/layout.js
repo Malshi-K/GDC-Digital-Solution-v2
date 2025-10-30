@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HubSpotChatbot from "@/components/HubSpotChatbot";
+import ChatbotDebug from "@/components/ChatbotDebug";
 import { useState, useEffect } from "react";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body>
         <GoogleAnalytics />
         <HubSpotChatbot />
+        <ChatbotDebug />
         <Header
           setIsDropdownOpen={setIsDropdownOpen}
           isDropdownOpen={isDropdownOpen}
